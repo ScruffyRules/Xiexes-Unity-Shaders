@@ -296,7 +296,7 @@ half4 calcRamp(XSLighting i, DotProducts d)
 
 half3 calcIndirectDiffuse(XSLighting i)
 {// We don't care about anything other than the color from probes for toon lighting.
-    half3 indirectDiffuse = ShadeSH9(float4(0,1,0,1));//half3(unity_SHAr.w, unity_SHAg.w, unity_SHAb.w);
+    half3 indirectDiffuse = ShadeSH9(float4(0,0,0,1));//half3(unity_SHAr.w, unity_SHAg.w, unity_SHAb.w);
     return indirectDiffuse;
 }
 
